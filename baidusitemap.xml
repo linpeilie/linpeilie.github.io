@@ -5,14 +5,19 @@
     
   <url>
     <loc>http://yoursite.com/content/2018/01/05/Markdown%E8%AF%AD%E6%B3%95-1/</loc>
-    <lastmod>2018-01-05T12:55:18.443Z</lastmod>
+    <lastmod>2018-01-05T13:11:58.797Z</lastmod>
     <data>
         <display>
         <title>Markdown语法</title>
-        <pubTime>2018-01-05T06:15:44.000Z</pubTime>
+        <pubTime>2018-01-05T06:15:00.000Z</pubTime>
         
+        <tag>Markdown</tag>
+         
          
            
+             
+              <breadCrumb title="杂记" url="http://yoursite.com/categories/%E6%9D%82%E8%AE%B0/"/>
+          
         </display>
     </data>
     </url>
