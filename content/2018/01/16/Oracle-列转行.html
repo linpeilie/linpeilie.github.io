@@ -125,18 +125,18 @@
 
 
 
-<meta name="description" content="记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：列转行、自定义排序  行转列pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，">
+<meta name="description" content="记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：列转行、自定义排序">
 <meta name="keywords" content="Oracle,数据库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Oracle常见问题及其处理方法">
 <meta property="og:url" content="http://yoursite.com/content/2018/01/16/Oracle-列转行.html">
 <meta property="og:site_name" content="荆敖晨的个人博客">
-<meta property="og:description" content="记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：列转行、自定义排序  行转列pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，">
+<meta property="og:description" content="记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：列转行、自定义排序">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-16T09:51:06.840Z">
+<meta property="og:updated_time" content="2018-01-16T09:53:10.038Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle常见问题及其处理方法">
-<meta name="twitter:description" content="记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：列转行、自定义排序  行转列pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，">
+<meta name="twitter:description" content="记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：列转行、自定义排序">
 
 
 
@@ -446,6 +446,7 @@
         <blockquote>
 <p>记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：<strong>列转行</strong>、<strong>自定义排序</strong></p>
 </blockquote>
+<a id="more"></a>
 <h1 id="行转列"><a href="#行转列" class="headerlink" title="行转列"></a>行转列</h1><p><strong><strong><code>pivot</code></strong> 函数</strong>：</p>
 <p><strong>语法</strong>：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> (...) </span><br><span class="line"><span class="keyword">pivot</span>(</span><br><span class="line">   <span class="keyword">sum</span>(<span class="keyword">value</span>) 	<span class="comment">--这里需要使用聚合函数，要转为行的那一列</span></span><br><span class="line">   <span class="keyword">for</span> object_type 	<span class="comment">--行转列的标准，依据哪一列进行行转列</span></span><br><span class="line">   <span class="keyword">in</span> (<span class="keyword">column</span>)	<span class="comment">--列转行取值，转化为行后的列标题，并且依照写的顺序排序</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
