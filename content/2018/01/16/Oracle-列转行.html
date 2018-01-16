@@ -125,18 +125,18 @@
 
 
 
-<meta name="description" content="pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，并且依照写的顺序排序)  注：该函数是Oracle 11G提供的函数，所以Oracle 11">
+<meta name="description" content="行转列pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，并且依照写的顺序排序)  注：该函数是Oracle 11G提供的函数，所以Oracle">
 <meta name="keywords" content="Oracle,数据库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Oracle--列转行">
+<meta property="og:title" content="Oracle">
 <meta property="og:url" content="http://yoursite.com/content/2018/01/16/Oracle-列转行.html">
 <meta property="og:site_name" content="荆敖晨的个人博客">
-<meta property="og:description" content="pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，并且依照写的顺序排序)  注：该函数是Oracle 11G提供的函数，所以Oracle 11">
+<meta property="og:description" content="行转列pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，并且依照写的顺序排序)  注：该函数是Oracle 11G提供的函数，所以Oracle">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-16T09:13:11.976Z">
+<meta property="og:updated_time" content="2018-01-16T09:35:36.460Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Oracle--列转行">
-<meta name="twitter:description" content="pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，并且依照写的顺序排序)  注：该函数是Oracle 11G提供的函数，所以Oracle 11">
+<meta name="twitter:title" content="Oracle">
+<meta name="twitter:description" content="行转列pivot 函数： 语法： 123456select * from (...) pivot(   sum(value) 	--这里需要使用聚合函数，要转为行的那一列   for object_type 	--行转列的标准，依据哪一列进行行转列   in (column)	--列转行取值，转化为行后的列标题，并且依照写的顺序排序)  注：该函数是Oracle 11G提供的函数，所以Oracle">
 
 
 
@@ -172,7 +172,7 @@
 
 
 
-  <title>Oracle--列转行 | 荆敖晨的个人博客</title>
+  <title>Oracle | 荆敖晨的个人博客</title>
   
 
 
@@ -360,7 +360,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Oracle--列转行</h1>
+          <h1 class="post-title" itemprop="name headline">Oracle</h1>
         
 
         <div class="post-meta">
@@ -412,7 +412,7 @@
 
           
           
-             <span id="/content/2018/01/16/Oracle-列转行.html" class="leancloud_visitors" data-flag-title="Oracle--列转行">
+             <span id="/content/2018/01/16/Oracle-列转行.html" class="leancloud_visitors" data-flag-title="Oracle">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -443,7 +443,7 @@
       
 
       
-        <p><strong><code>pivot</code></strong> 函数：</p>
+        <h1 id="行转列"><a href="#行转列" class="headerlink" title="行转列"></a>行转列</h1><p><strong><strong><code>pivot</code></strong> 函数</strong>：</p>
 <p><strong>语法</strong>：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> (...) </span><br><span class="line"><span class="keyword">pivot</span>(</span><br><span class="line">   <span class="keyword">sum</span>(<span class="keyword">value</span>) 	<span class="comment">--这里需要使用聚合函数，要转为行的那一列</span></span><br><span class="line">   <span class="keyword">for</span> object_type 	<span class="comment">--行转列的标准，依据哪一列进行行转列</span></span><br><span class="line">   <span class="keyword">in</span> (<span class="keyword">column</span>)	<span class="comment">--列转行取值，转化为行后的列标题，并且依照写的顺序排序</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -457,6 +457,8 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> *</span><br><span class="line"><span class="keyword">FROM</span> (</span><br><span class="line"><span class="keyword">SELECT</span> TD.CITY_CODE, <span class="keyword">COUNT</span>(<span class="number">1</span>) C</span><br><span class="line"><span class="keyword">FROM</span> TD_ORD TD</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> TD.CITY_CODE) T </span><br><span class="line"><span class="keyword">PIVOT</span>(<span class="keyword">SUM</span>(C) <span class="keyword">FOR</span> CITY_CODE <span class="keyword">IN</span> (<span class="string">'0530'</span>, <span class="string">'0531'</span>, <span class="string">'0532'</span>, <span class="string">'0533'</span>, <span class="string">'0534'</span>, <span class="string">'0535'</span>, <span class="string">'0536'</span>, <span class="string">'0537'</span>, <span class="string">'0538'</span>, <span class="string">'0539'</span>, <span class="string">'0543'</span>, <span class="string">'0546'</span>, <span class="string">'0631'</span>, <span class="string">'0632'</span>, <span class="string">'0633'</span>, <span class="string">'0634'</span>, <span class="string">'0635'</span>))</span><br></pre></td></tr></table></figure>
 <p>实现效果：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&apos;0530&apos;	&apos;0531&apos;	&apos;0532&apos;	&apos;0533&apos;	&apos;0534&apos;	&apos;0535&apos;	&apos;0536&apos;	&apos;0537&apos;	&apos;0538&apos;	&apos;0539&apos;	&apos;0543&apos;	&apos;0546&apos;	&apos;0631&apos;	&apos;0632&apos;	&apos;0633&apos;	&apos;0634&apos;	&apos;0635&apos;</span><br><span class="line">2285	6909	8559	3390	4065	2996	7174	4914	1469	5388	2432	1359	1890	1793	3272	618	3796</span><br></pre></td></tr></table></figure>
+<h1 id="自定义排序"><a href="#自定义排序" class="headerlink" title="自定义排序"></a>自定义排序</h1><p><strong><strong><code>order by decode()</code></strong>函数</strong>:</p>
+
       
     </div>
     
@@ -553,8 +555,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -580,7 +591,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -591,7 +602,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -621,6 +632,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#行转列"><span class="nav-number">1.</span> <span class="nav-text">行转列</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义排序"><span class="nav-number">2.</span> <span class="nav-text">自定义排序</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
