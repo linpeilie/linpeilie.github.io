@@ -125,16 +125,17 @@
 
 
 
-<meta name="description" content="Java、技术、学习、成长">
-<meta property="og:type" content="website">
-<meta property="og:title" content="荆敖晨的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="安装git nodeGitNode.js 配置SSH keys生成新的SSH keys： 123456789101112131415161718192021$ ssh-keygen -t rsa -C 1912599989@qq.comGenerating public/private rsa key pair.Enter file in which to save the key (/c/Use">
+<meta property="og:type" content="article">
+<meta property="og:title" content="重装系统后快速配置Hexo">
+<meta property="og:url" content="http://yoursite.com/content/2018/02/03/重装系统后快速配置Hexo.html">
 <meta property="og:site_name" content="荆敖晨的个人博客">
-<meta property="og:description" content="Java、技术、学习、成长">
+<meta property="og:description" content="安装git nodeGitNode.js 配置SSH keys生成新的SSH keys： 123456789101112131415161718192021$ ssh-keygen -t rsa -C 1912599989@qq.comGenerating public/private rsa key pair.Enter file in which to save the key (/c/Use">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-03T14:47:17.400Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="荆敖晨的个人博客">
-<meta name="twitter:description" content="Java、技术、学习、成长">
+<meta name="twitter:title" content="重装系统后快速配置Hexo">
+<meta name="twitter:description" content="安装git nodeGitNode.js 配置SSH keys生成新的SSH keys： 123456789101112131415161718192021$ ssh-keygen -t rsa -C 1912599989@qq.comGenerating public/private rsa key pair.Enter file in which to save the key (/c/Use">
 
 
 
@@ -164,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/content/2018/02/03/重装系统后快速配置Hexo.html"/>
 
 
 
 
 
-  <title>荆敖晨的个人博客</title>
+  <title>重装系统后快速配置Hexo | 荆敖晨的个人博客</title>
   
 
 
@@ -199,8 +200,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -327,9 +327,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -359,9 +359,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/content/2018/02/03/重装系统后快速配置Hexo.html" itemprop="url">重装系统后快速配置Hexo</a></h1>
+          <h1 class="post-title" itemprop="name headline">重装系统后快速配置Hexo</h1>
         
 
         <div class="post-meta">
@@ -422,20 +420,11 @@
       
 
       
-        
-          
-          安装git nodeGitNode.js
-配置SSH keys生成新的SSH keys：
-123456789101112131415161718192021$ ssh-keygen -t rsa -C 1912599989@qq.comGenerating public/private rsa ke
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/content/2018/02/03/重装系统后快速配置Hexo.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="安装git-node"><a href="#安装git-node" class="headerlink" title="安装git node"></a>安装git node</h2><p><strong><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></strong><br><strong><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></strong></p>
+<h2 id="配置SSH-keys"><a href="#配置SSH-keys" class="headerlink" title="配置SSH keys"></a>配置SSH keys</h2><p>生成新的SSH keys：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C 1912599989@qq.com</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/linpeilie/.ssh/id_rsa): #这里是存放位置，如果无需改动则直接回车</span><br><span class="line">Enter passphrase (empty for no passphrase):	#这里提示输入密码，密码是为了防止别人通过这个ssh往你的项目中提交内容，无需设置的话可以直接回车</span><br><span class="line">Enter same passphrase again:	#再次输入密码</span><br><span class="line">Your identification has been saved in /c/Users/linpeilie/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/linpeilie/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:S48zNMYnmqLEeLFktl0P+DB3WSdWJoD9JQF0WxdTgoo 1912599989@qq.com</span><br><span class="line">The key&apos;s randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|       ++o+.+.=o.|</span><br><span class="line">|      . ...*o. o |</span><br><span class="line">|         o=+.    |</span><br><span class="line">|     . .E+oo     |</span><br><span class="line">|  = + + S .      |</span><br><span class="line">| * = * X B       |</span><br><span class="line">|. * o + * .      |</span><br><span class="line">| o . .   o       |</span><br><span class="line">|  .              |</span><br><span class="line">+----[SHA256]-----+</span><br></pre></td></tr></table></figure>
+<h2 id="添加SSH-keys到GitHub"><a href="#添加SSH-keys到GitHub" class="headerlink" title="添加SSH keys到GitHub"></a>添加SSH keys到GitHub</h2><p>1.找到刚才生成的id_rsa.pub文件，打开复制所有内容；<br>2.登录github，点击右上角，点击Settings–&gt;SSH and GPG keys–&gt;New SSH key，粘贴后保存；</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br><span class="line">Hi linpeilie! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -452,151 +441,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/content/2018/01/24/Deepin使用记录.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="荆敖晨">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="荆敖晨的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/content/2018/01/24/Deepin使用记录.html" itemprop="url">Deepin记录</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-24T11:28:16+08:00">
-                2018-01-24
-              </time>
+              <a href="/content/2018/01/24/Deepin使用记录.html" rel="next" title="Deepin记录">
+                <i class="fa fa-chevron-left"></i> Deepin记录
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/content/2018/01/24/Deepin使用记录.html" class="leancloud_visitors" data-flag-title="Deepin记录">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          软件安装 及其 配置1.shadowsocks-qt5可直接在deepin商店中下载，或者在命令行中输入：
-sudo apt-get install shadowsocks-qt5
-在安装后配置好成功后，还不能科学上网，解决方法：设置–网络–系统代理–手动–Socks代理中，地址填写127.0.0.
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/content/2018/01/24/Deepin使用记录.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -606,470 +472,27 @@ sudo apt-get install shadowsocks-qt5
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/content/2018/01/16/Oracle-列转行.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="荆敖晨">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="荆敖晨的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/content/2018/01/16/Oracle-列转行.html" itemprop="url">Oracle常见问题及其处理方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-16T16:23:00+08:00">
-                2018-01-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Oracle/" itemprop="url" rel="index">
-                    <span itemprop="name">Oracle</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/content/2018/01/16/Oracle-列转行.html" class="leancloud_visitors" data-flag-title="Oracle常见问题及其处理方法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>记录学习及其工作过程中遇到的问题及其解决方法，目前记录的问题：<strong>列转行</strong>、<strong>自定义排序</strong></p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/content/2018/01/16/Oracle-列转行.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/content/2018/01/05/Markdown语法-1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="荆敖晨">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="荆敖晨的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/content/2018/01/05/Markdown语法-1.html" itemprop="url">Markdown语法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-05T14:15:00+08:00">
-                2018-01-05
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂记/" itemprop="url" rel="index">
-                    <span itemprop="name">杂记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/content/2018/01/05/Markdown语法-1.html" class="leancloud_visitors" data-flag-title="Markdown语法">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><strong>Markdown：一种适应于网络的书写语言</strong></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/content/2018/01/05/Markdown语法-1.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMjg5Ny85NDU4"></div>
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/content/2017/12/29/hello-world.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="荆敖晨">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="荆敖晨的个人博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/content/2017/12/29/hello-world.html" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-29T19:43:16+08:00">
-                2017-12-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/content/2017/12/29/hello-world.html" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/content/2017/12/29/hello-world.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
 
   
 
 
-          </div>
-          
-
-
-          
 
         </div>
         
@@ -1090,8 +513,17 @@ sudo apt-get install shadowsocks-qt5
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1158,6 +590,22 @@ sudo apt-get install shadowsocks-qt5
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装git-node"><span class="nav-number">1.</span> <span class="nav-text">安装git node</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置SSH-keys"><span class="nav-number">2.</span> <span class="nav-text">配置SSH keys</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加SSH-keys到GitHub"><span class="nav-number">3.</span> <span class="nav-text">添加SSH keys到GitHub</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">4.</span> <span class="nav-text">测试</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1309,6 +757,10 @@ sudo apt-get install shadowsocks-qt5
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -1337,6 +789,17 @@ sudo apt-get install shadowsocks-qt5
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
